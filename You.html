@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<article id="contact">
+   <link rel="stylesheet" href="style.css" type="text/css"> 
+   <title>Feedback</title>
+</head>
+<body>
+  <nav>
+   <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="You.html">You</a></li>
+    </ul>
+  </nav>
+  <hr />
+  <article id="contact">
+  <h1>Toronto and You</h1>
+    <p> Let us learn a little about you! </p>
+    <form action="https://httpbin.org/get" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <!-- use inline element p as opposed to empty div-->
+        <p>
+          <label for="firstName">First Name:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="John"
+          />
+        </p>
+        <p>
+          <label for="lastName">Last Name:</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Doe"
+          />
+        </p>
+        <p>
+          <label for="Technologies">Interest in coming to Toronto:</label>
+          <select name="sa" id="sa">
+            <option value="JS">Vacation</option>
+            <option value="React">Education</option>
+            <option value="CC">Family Visit</option>
+            <option value="GH">Cool city to see</option>
+          </select>
+        </p>
+        <p>
+          <label for="Community">Favorite Activities:</label>
+          <input type="text" name="food" id="food" list="food-list" />
+          <datalist id="food-list">
+            <option value="Skating">Skating</option>
+            <option value="Sightseeing">Sightseeing</option>
+            <option value="Live Theatre">Live Theatre</option>
+            <option value="Restaurants">Restaurants</option>
+          </datalist>
+        </p>
+      </fieldset>
+      <br />
+      <!--Second section of the form-->
+      <fieldset>
+        <legend>What I know about Toronto:</legend>
+        <p>
+          <input type="radio" name="ideas" id="Rewarding" value="Rewarding" />
+          <label for="Rewarding">Fun</label>
+        </p>
+        <p>
+          <input
+            type="radio"
+            name="ideas"
+            id="Hard to get in"
+            value="Hard to get in"
+          />
+          <label for="Hard to get in">Beautiful</label>
+        </p>
+        <p>
+          <input type="radio" name="ideas" id="Easy to get burned out" value="Easy to get burned out" />
+          <label for="Easy to get burned out">Don't know, but willing to find out!</label>
+        </p>
+      </fieldset>
+      <br />
+      <!--third section of the form-->
+      <fieldset>
+        <legend>What to bring when you are visiting Toronto:</legend>
+        <p>
+          <input type="checkbox" name="study tips" id="alone" value="alone" />
+          <label for="alone">Open Mind</label>
+        </p>
+        <p>
+          <input
+            type="checkbox"
+            name="study tips"
+            id="group work"
+            value="group work"
+          />
+          <label for="group work">Willingness to explore the city</label>
+        </p>
+        <p>
+          <input
+            type="checkbox"
+            name="study tips"
+            id="projects"
+            value="projects"
+          />
+          <label for="projects">Winter Clothes</label>
+        </p>
+      </fieldset>
+      <br />
+      <!--fourth section of the same form-->
+      <fieldset>
+        <legend>Send Me a Note</legend>
+        <lable for="message">Your Message:</lable>
+        <br />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Type your message here"
+        ></textarea>
+      </fieldset>
+      <br />
+      <button type="submit">Submit</button>
+      <button type="submit" formaction="https://httpbin.org/post formmethod="post">Post</button>
+      <button type="reset">Reset</button>
+    </form>
+  </article>
+  <!--Special entities of HTML &lt (Less than) and &gt(greater than) and &copy (copy right) to indent lines,based on your specific requirement you can use these elements-->
+  <strong>&lt;&lt;&lt; &copy; Hanif Software Engineer &gt;&gt;&gt;</strong>
+</body>
+</html>

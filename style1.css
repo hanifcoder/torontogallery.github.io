@@ -1,0 +1,51 @@
+body {
+  background-image: url(toronto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  font-size: 3em;
+  font-family: Fantasy, Arial, Helvetica, sans-serif;
+  color: rgba(153, 0, 102, 0.986);
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #dbf3fa;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.nav-links {
+  list-style: none;
+}
+
+.nav-links a {
+  color: blue;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: x-large;
+  padding: 14 px 16 px;
+}
+
+.nav-links li a:hover:not(.active) {
+  background-color: lightgray;
+}
+.nav-links li a.active {
+  background-color: goldenrod;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: auto;
+  background: rgb(238, 238, 238);
+}
